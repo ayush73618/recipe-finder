@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import RecipeFinder from "./components/RecipeFinder";
 import Root from "./components/Root";
 import HomePage from "./components/HomePage";
+import Register from "./components/Register";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
         },
       ],
     },

@@ -13,6 +13,7 @@ const Root = () => {
 
   const onLogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("searchedItem");
     setIsActive(false);
     nav("/login");
   };
