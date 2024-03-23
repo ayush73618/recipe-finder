@@ -1,10 +1,11 @@
 This APP Will help You To find your Favourite Recipe along with all details with it , Ingredients, Calories , you can search your recipe.
 
 First installing required Packages -----
-npm install
-npm install react-router-dom
-npm i react-toastify
-npm install bootstrap
+
+1. npm install
+2. npm install react-router-dom
+3. npm i react-toastify
+4. npm install bootstrap
 
 In the project directory, you can run:
 
