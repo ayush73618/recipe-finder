@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 70px;
+  height: 60px;
   background-color: rgba(0, 0, 0, 0.575);
   font-weight: 600;
 }
@@ -13,8 +13,19 @@
   justify-content: space-around;
 }
 
+.backDrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 99;
+  opacity: 0.9;
+}
+
 .navbar ul li {
-  margin: 1rem;
+  margin-left: 1rem;
   list-style: none;
 }
 .navbar ul li a {
@@ -30,29 +41,15 @@
   justify-content: center;
 }
 
-.navbar h1 {
+.navbar h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 800;
   color: #eee;
 }
 
-.navbar button {
+.navbar ul li button {
   margin-top: 8px;
-  margin-left: -30px;
-}
-
-.display img {
-  width: 500px;
-  height: 400px;
-}
-
-.display a {
-  text-decoration: none;
-  background-color: #333;
-  color: #eee;
-  padding: 1rem;
-  border-radius: 4px;
 }
 
 .modal {
@@ -72,15 +69,17 @@
   overflow: scroll;
 }
 
-.backDrop {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0, 0.9);
-  z-index: 99;
-  opacity: 0.9;
+.display img {
+  width: 500px;
+  height: 400px;
+}
+
+.display a {
+  text-decoration: none;
+  background-color: #333;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 @keyframes slide-down {

@@ -33,7 +33,7 @@ const ViewItem = (props) => {
               </td>
             </tr>
             <tr>
-              <td>Diet's Labes</td>
+              <td>Diet's Lables</td>
               <td>
                 {item.dietLabels.map((res) => (
                   <li>{res}</li>
