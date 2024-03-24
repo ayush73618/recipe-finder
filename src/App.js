@@ -1,10 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import Login from "./components/Login";
-import RecipeFinder from "./components/RecipeFinder";
-import Root from "./components/Root";
-import HomePage from "./components/HomePage";
-import Register from "./components/Register";
+import Login from "./comp/Login";
+import RecipeFinder from "./comp/RecipeFinder";
+import Root from "./comp/Root";
+import HomePage from "./comp/HomePage";
+import Register from "./comp/Register";
 
 function App() {
   const router = createBrowserRouter([
