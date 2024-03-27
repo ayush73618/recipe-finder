@@ -17,10 +17,7 @@
 .register form {
   margin-top: 20px;
 }
-.register label {
-  display: block;
-  margin-bottom: 5px;
-}
+
 .register input[type="text"],
 .register input[type="email"],
 .register input[type="password"] {

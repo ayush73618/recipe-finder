@@ -1,4 +1,24 @@
 /* Inside src/App.css */
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 .login {
   position: fixed;
   top: 50%;
@@ -13,25 +33,6 @@
   background-color: #f0f0f0;
   border: 2px solid #333;
   border-radius: 12px;
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
 }
 
 .login > form > button {

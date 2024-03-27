@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Style.module.css";
 const HomePage = () => {
+  //set isActive or setIsActive
   const [isActive, setIsActive] = useState(false);
 
+  // check if useris acrive or not by using useEffect on Refresh out page
   useEffect(() => {
     if (localStorage.getItem("user")) {
       setIsActive(true);

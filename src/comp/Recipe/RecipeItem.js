@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import classes from "./RecipeItem.module.css";
 import ViewItem from "./ViewItem";
 const RecipeItem = (props) => {
-  const [items, setItems] = useState();
+  //Item getting from props items
   const item = props.data;
-  const viewItem = () => {
-    if (items) {
-      setItems();
-    } else {
-      setItems(item);
-    }
-  };
+
+  //UseState for items setup
+  const [items, setItems] = useState();
+
+  //Clode the Open Modal
   const onClose = () => {
     setItems();
   };
+
+  //To View Items
+  const viewItem = () => {
+    setItems(item);
+  };
+
   return (
     <>
       <div className={classes.showItems}>

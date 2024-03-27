@@ -5,7 +5,11 @@
   flex-direction: column;
   justify-content: center;
 }
-
+.box {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
 .showItems {
   display: flex;
   flex-direction: row;
@@ -16,12 +20,6 @@
   margin-top: 2rem;
   background-color: #eee;
   width: 800px;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
 }
 
 .loading {

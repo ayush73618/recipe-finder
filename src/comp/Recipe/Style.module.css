@@ -13,6 +13,11 @@
   justify-content: space-around;
 }
 
+.display img {
+  width: 500px;
+  height: 400px;
+}
+
 .backDrop {
   position: fixed;
   width: 100vw;
@@ -67,11 +72,6 @@
   box-shadow: 4px 4px 12px #41ef;
   animation: slide-down 1s ease-in-out;
   overflow: scroll;
-}
-
-.display img {
-  width: 500px;
-  height: 400px;
 }
 
 .display a {

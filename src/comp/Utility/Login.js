@@ -3,34 +3,42 @@ import classes from "./Login.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 const Login = () => {
-  const [userName, setUserName] = useState();
+  //useState for password
   const [password, setPassword] = useState();
+
+  //useState for userName
+  const [userName, setUserName] = useState();
+
+  //useNavigate to another page
   const nav = useNavigate();
 
+  //PasswordHandler to set the the password on each change
   const passwordHandler = (event) => {
     setPassword(event.target.value);
   };
 
+  //UserHandler to set the userId on each change
   const userNameHandler = (event) => {
     setUserName(event.target.value);
   };
 
+  //onSubmit it will check for Id password and according to it it will navigate or toast the message
   const onsubmitHandler = (event) => {
     event.preventDefault();
-    if (userName === "Admin" && password === "Password") {
+    if (userName === "Best4U" && password === "Best4U") {
       localStorage.setItem("user", true);
 
       nav("/");
-      toast.info("Welcome");
+      toast.info("Welcome to Best4U");
     } else {
-      toast.error("User Name Or Password Does not Match");
+      toast.error("Something wrong with User Name Or Password");
     }
   };
 
   return (
     <div className={classes.login}>
       <ToastContainer />
-      <h1>Login Please</h1>
+      <h1>Best4U</h1>
       <form>
         <input
           type="text"

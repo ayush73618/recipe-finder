@@ -1,33 +1,41 @@
 import React from "react";
 import classes from "./Style.module.css";
 
-const ViewItem = (props) => {
-  const item = props.item;
-  console.log(item.totalNutrients);
+const ViewrecipeItem = (props) => {
+  //Fetch All recipeItems Through Props
+  const recipeItem = props.item;
+
+  console.log(recipeItem.totalNutrients);
 
   return (
     <>
+      {
+        // Backdrop Element for Blur BackGround
+      }
       <div className={classes.backDrop} onClick={props.onClose}></div>
+      {
+        //Modal Pop- Up for Viewing Items
+      }
       <div className={classes.modal}>
         <div className="img">
-          <img src={item.image} alt="" width="200px" height="200px" />
+          <img src={recipeItem.image} alt="" width="200px" height="200px" />
         </div>
         <table className="table table-striped table-bordered">
           <thead>
             <tr>
               <td>Name</td>
-              <td>{item.label}</td>
+              <td>{recipeItem.label}</td>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Calorie's</td>
-              <td>{item.calories}</td>
+              <td>{recipeItem.calories}</td>
             </tr>
             <tr>
               <td>Cuisine Type</td>
               <td>
-                {item.cuisineType.map((res) => (
+                {recipeItem.cuisineType.map((res) => (
                   <li>{res}</li>
                 ))}
               </td>
@@ -35,19 +43,19 @@ const ViewItem = (props) => {
             <tr>
               <td>Diet's Lables</td>
               <td>
-                {item.dietLabels.map((res) => (
+                {recipeItem.dietLabels.map((res) => (
                   <li>{res}</li>
                 ))}
               </td>
             </tr>
             <tr>
               <td>Type Of Dish</td>
-              <td>{item.dishType.map((res) => res)}</td>
+              <td>{recipeItem.dishType.map((res) => res)}</td>
             </tr>
             <tr>
               <td>Ingredients</td>
               <td>
-                {item.ingredientLines.map((res) => (
+                {recipeItem.ingredientLines.map((res) => (
                   <li>{res}</li>
                 ))}
               </td>
@@ -56,19 +64,19 @@ const ViewItem = (props) => {
               <td>TotalNutrients</td>
               <td>
                 <li>
-                  {`${item.totalNutrients.ENERC_KCAL.label} = 
-                  ${item.totalNutrients.ENERC_KCAL.quantity}
-                  ${item.totalNutrients.ENERC_KCAL.unit}`}
+                  {`${recipeItem.totalNutrients.ENERC_KCAL.label} = 
+                  ${recipeItem.totalNutrients.ENERC_KCAL.quantity}
+                  ${recipeItem.totalNutrients.ENERC_KCAL.unit}`}
                 </li>
                 <li>
-                  {`${item.totalNutrients.FAT.label} = 
-                  ${item.totalNutrients.FAT.quantity}
-                  ${item.totalNutrients.FAT.unit}`}
+                  {`${recipeItem.totalNutrients.FAT.label} = 
+                  ${recipeItem.totalNutrients.FAT.quantity}
+                  ${recipeItem.totalNutrients.FAT.unit}`}
                 </li>
                 <li>
-                  {`${item.totalNutrients.FASAT.label} = 
-                  ${item.totalNutrients.FASAT.quantity}
-                  ${item.totalNutrients.FASAT.unit}`}
+                  {`${recipeItem.totalNutrients.FASAT.label} = 
+                  ${recipeItem.totalNutrients.FASAT.quantity}
+                  ${recipeItem.totalNutrients.FASAT.unit}`}
                 </li>
               </td>
             </tr>
@@ -79,4 +87,4 @@ const ViewItem = (props) => {
   );
 };
 
-export default ViewItem;
+export default ViewrecipeItem;
